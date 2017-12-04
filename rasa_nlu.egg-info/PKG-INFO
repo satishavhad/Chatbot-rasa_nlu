@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: rasa-nlu
+Version: 0.10.4
+Summary: Rasa NLU a natural language parser for bots
+Home-page: https://rasa.ai
+Author: Alan Nichol
+Author-email: alan@rasa.ai
+License: UNKNOWN
+Download-URL: https://github.com/RasaHQ/rasa_nlu/archive/0.10.4.tar.gz
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: nlp,machine-learning,machine-learning-library,bot,bots,botkit,rasa,conversational-agents,conversational-ai,chatbot,chatbot-framework,bot-framework
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
