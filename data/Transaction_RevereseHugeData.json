@@ -1,0 +1,1837 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "Buy transaction with activity id 12345 should be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "12345",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Sell transaction with activity id 23456 should be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "23456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Help me reverse a buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Help me reverse a sell transaction with activity id 3456",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "revert the buy transaction for activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "revert the sell transaction for activity id 56789",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 44,
+            "end": 49,
+            "value": "56789",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Please undo the buy transaction for activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Please undo the sell transaction for activity id 56789",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "value": "56789",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse the buy transaction please, activity id is 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse the sell transaction please, activity id is 3456",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "can you reverse the buy transaction for activity id 12345? ",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 57,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "can you reverse the sell transaction for activity id 3456?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 53,
+            "end": 57,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a sell transaction with activity id 78652",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "value": "78652",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 38,
+            "end": 43,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo sell transaction with activity id 56734",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "56734",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 56,
+            "end": 61,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse sell transaction with activity id 67854",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 57,
+            "end": 62,
+            "value": "67854",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse sell transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 57,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse Free Receipt transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 60,
+            "end": 65,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse Free Receipt transaction with activity id 67854",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 65,
+            "end": 70,
+            "value": "67854",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo Free Receipt transaction with activity id 56734",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 47,
+            "end": 52,
+            "value": "56734",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 5,
+            "end": 17,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a Free Receipt transaction with activity id 78652",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 57,
+            "end": 62,
+            "value": "78652",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 15,
+            "end": 27,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse activity 3242342 for buy",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "3242342",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 29,
+            "end": 32,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 9876 for sell",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "9876",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 9876 for sell",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "9876",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "revert 09987 buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "09987",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 13,
+            "end": 16,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "463728 activity id for buy transaction to be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "463728",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "847633 activity id for sell transaction to be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 0,
+            "end": 6,
+            "value": "847633",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "revert 876634 sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 13,
+            "value": "876634",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "would you reverse 232323 activity for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "232323",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "would you reverse 5634455 activity for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "5634455",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 39,
+            "end": 42,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "would you reverse 5634455 activity for Free Receipt transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "5634455",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 39,
+            "end": 51,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 56777 activity for buy transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "56777",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 34,
+            "end": 37,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 6745 activity for sell transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "6745",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 33,
+            "end": 37,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 324466 activity for free receipt transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "324466",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 35,
+            "end": 47,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 985545 activity id for buy transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "985545",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 455755 activity id for sell transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "455755",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 38,
+            "end": 42,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Can you revert 2333333 activity id for free receipt transaction?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "2333333",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 39,
+            "end": 51,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Could you reverse buy transaction with 56777 activity?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Could you reverse sell transaction with 56777 activity?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 40,
+            "end": 45,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Could you reverse free receipt transaction with 56777 activity?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Could you reverse buy trx with 56777 activity?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse sell trx for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "56777",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Reverse buy trx for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse free receipt trx for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse free receipt trx for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 29,
+            "end": 34,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse buy trx for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse sell trx for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "How to reverse sell for 56777 activity id?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 24,
+            "end": 29,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "How to reverse buy for 56777 activity id?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 18,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "How to reverse free receipt for 56777 activity id?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 27,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "to reverse buy for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 19,
+            "end": 24,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "to reverse sell for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 20,
+            "end": 25,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "to reverse free receipt for 56777 activity",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 23,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "reverse buy for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 16,
+            "end": 21,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "reverse sell for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 17,
+            "end": 22,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "reverse free receipt for 56777 activity id",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "56777",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "56777 activity for sell to be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "56777",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "74564 activity for buy to be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "74564",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 19,
+            "end": 22,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "856534 activity for free receipt to be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "856534",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 20,
+            "end": 32,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 6555 for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "6555",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 1223 for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1223",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 29,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "revert 63445 for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 20,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "revert 63445 for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "revert 63445 for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 29,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "63445 reverse for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "45466 reverse for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "45466",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "85454 reverse for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "85454",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 18,
+            "end": 30,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "63445 reverse for buy trx",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 18,
+            "end": 21,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "6453 reverse for sell trx",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "6453",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "9987677 reverse for free receipt trx",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "9987677",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 20,
+            "end": 32,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 14,
+            "end": 17,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 14,
+            "end": 18,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 14,
+            "end": 26,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 activity buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 23,
+            "end": 26,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 activity sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "63445",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 23,
+            "end": 27,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "reverse 63445 activity free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "63445 ",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 23,
+            "end": 35,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity id 23343 for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "23343",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 42,
+            "end": 46,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity id 33656 for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "33656",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 42,
+            "end": 45,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity id 8655456 for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 32,
+            "end": 39,
+            "value": "8655456",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 44,
+            "end": 56,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity 654434 for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "654434",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity 4444 for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 33,
+            "value": "4444",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 38,
+            "end": 41,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of activity 55555 for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "55555",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 39,
+            "end": 51,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of 875454 for sell transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "875454",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "sell",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of 232344 for buy transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "232344",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 31,
+            "end": 34,
+            "value": "buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of 89565 for free receipt transaction",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "89565",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of sell transaction for activity 4444445",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 50,
+            "end": 57,
+            "value": "4444445",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of buy transaction for activity 8776666 ",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 49,
+            "end": 56,
+            "value": "8776666",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of free receipt transaction for activity 54655544",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 32,
+            "value": "free receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 58,
+            "end": 66,
+            "value": "54655544",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "perform reversal of sell trx for activity 44545565545",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 42,
+            "end": 53,
+            "value": "44545565545",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yep",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a place to eat",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I want to grab lunch",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "I am searching for a dinner spot",
+        "intent": "restaurant_search",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      }	  
+    ]
+  }
+}

@@ -1,0 +1,1695 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      }
+    ],
+    "entity_synonyms": [
+    ],
+    "common_examples": [
+      {
+        "text": "Buy transaction with activity id 12345 should be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 33,
+            "end": 39,
+            "value": "12345",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 0,
+            "end": 4,
+            "value": "Buy",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Sell transaction with activity id 23456 should be reversed",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 34,
+            "end": 40,
+            "value": "23456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Help me reverse a buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Help me reverse a sell transaction with activity id 3456",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "revert the buy transaction for activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "revert the sell transaction for activity id 56789",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 44,
+            "end": 49,
+            "value": "56789",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Please undo the buy transaction for activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Please undo the sell transaction for activity id 56789",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "value": "56789",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse the buy transaction please, activity id is 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Reverse the sell transaction please, activity id is 3456",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 56,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "can you reverse the buy transaction for activity id 12345? ",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 24,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 57,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "can you reverse the sell transaction for activity id 3456?",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 53,
+            "end": 57,
+            "value": "3456",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 48,
+            "end": 53,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a sell transaction with activity id 78652",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "value": "78652",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 5,
+            "end": 9,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 38,
+            "end": 43,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo sell transaction with activity id 56734",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "56734",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 56,
+            "end": 61,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse sell transaction with activity id 67854",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 57,
+            "end": 62,
+            "value": "67854",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse buy transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "buy",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse sell transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "sell",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 52,
+            "end": 57,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "I want to reverse Free Receipt transaction with activity id 12345",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 60,
+            "end": 65,
+            "value": "12345",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "i'm looking to reverse Free Receipt transaction with activity id 67854",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 35,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          },
+          {
+            "start": 65,
+            "end": 70,
+            "value": "67854",
+            "entity": "Activity_ID"
+          }
+        ]
+      },
+      {
+        "text": "undo Free Receipt transaction with activity id 56734",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 47,
+            "end": 52,
+            "value": "56734",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 5,
+            "end": 17,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "text": "Lets reverse a Free Receipt transaction with activity id 78652",
+        "intent": "reverse_transaction",
+        "entities": [
+          {
+            "start": 57,
+            "end": 62,
+            "value": "78652",
+            "entity": "Activity_ID"
+          },
+          {
+            "start": 15,
+            "end": 27,
+            "value": "Free Receipt",
+            "entity": "Transaction_type"
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Show bitcoin news",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "bitcoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Show litecoin news",
+        "entities": [
+          {
+            "start": 5,
+            "end": 13,
+            "value": "litecoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Latest litecoin news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Latest lightcoin news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Latest ltc news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Latest litecoins news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "news",
+        "text": "Latest LTC news",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is a BitCoin worth?",
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "BitCoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is Monero worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "Monero",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the current Litecoin price?",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "Litecoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the etherum price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "ETH",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the ethereum price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "ETH",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the eth price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "ETH",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the ETH price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "ETH",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the Ethereum price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "Ethereum",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the litecoin price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the lightcoin price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the ltc price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the litecoins price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "What is the LTC price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is litecoin worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is lightcoin worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is ltc worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is litecoins worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is LTC worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is monero worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is monro worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is xmr worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is XMR worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Give me the monero price",
+        "entities": [
+          {
+            "start": 12,
+            "end": 18,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Give me the monro price",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Give me the xmr price",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Give me the XMR price",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Give me the bitcoin price",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "bitcoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "Show bitcoin price",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "bitcoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "How much is bitcoin \nworth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "bitcoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "give me litecoin prices",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "litecoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "give me bitcoin prices",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "bitcoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "what is the btc price?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "btc",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "what is the litecoin worth?",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "litecoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "get_price",
+        "text": "litecoin price",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "litecoin",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 2 bitcoin",
+        "entities": [
+          {
+            "start": 6,
+            "end": 13,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "2",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 2 btc",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "2",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 2 bitcoins",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "2",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 2 BTC",
+        "entities": [
+          {
+            "start": 4,
+            "end": 5,
+            "value": "2",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 6,
+            "end": 9,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Purchase 3 bitcoin",
+        "entities": [
+          {
+            "start": 11,
+            "end": 18,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "value": "3",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Purchase 3 btc",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "value": "3",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Purchase 3 bitcoins",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 10,
+            "value": "3",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Purchase 3 BTC",
+        "entities": [
+          {
+            "start": 9,
+            "end": 10,
+            "value": "3",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Purchase",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 3 bitcoins",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "bitcoins",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "3",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 4 litecoin",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "4",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 4 lightcoin",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "4",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 4 ltc",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "4",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 4 litecoins",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "4",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 4 LTC",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 5,
+            "value": "4",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "Buy 12 Litecoins",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "Litecoins",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 4,
+            "end": 6,
+            "value": "12",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 0,
+            "end": 3,
+            "value": "Buy",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "purchase 12 litecoin",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "12",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "purchase 12 lightcoin",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "12",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "purchase 12 ltc",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "12",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "purchase 12 litecoins",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "12",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "purchase",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "purchase 12 LTC",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "LTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 9,
+            "end": 11,
+            "value": "12",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "purchase",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a buy trade for 0.74 bitcoin",
+        "entities": [
+          {
+            "start": 26,
+            "end": 33,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "0.74",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a buy trade for 0.74 btc",
+        "entities": [
+          {
+            "start": 26,
+            "end": 29,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "0.74",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a buy trade for 0.74 bitcoins",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 21,
+            "end": 25,
+            "value": "0.74",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "buy",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a buy trade for 0.74 BTC",
+        "entities": [
+          {
+            "start": 21,
+            "end": 25,
+            "value": "0.74",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 26,
+            "end": 29,
+            "value": "BTC",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 7,
+            "end": 10,
+            "value": "buy",
+            "entity": "trade_direction",
+            "entity_id": 10
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a sell trade for 1.24 monero",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "1.24",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sell",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a sell trade for 1.24 monro",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "1.24",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sell",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a sell trade for 1.24 xmr",
+        "entities": [
+          {
+            "start": 27,
+            "end": 30,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          },
+          {
+            "start": 22,
+            "end": 26,
+            "value": "1.24",
+            "entity": "crypto_quantity"
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sell",
+            "entity": "trade_direction"
+          }
+        ]
+      },
+      {
+        "intent": "transact_security",
+        "text": "make a sell trade for 1.24 XMR",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "1.24",
+            "entity": "crypto_quantity",
+            "entity_id": 9
+          },
+          {
+            "start": 7,
+            "end": 11,
+            "value": "sell",
+            "entity": "trade_direction",
+            "entity_id": 10
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "XMR",
+            "entity": "crypto_ticker",
+            "entity_id": 2
+          }
+        ]
+      }	  
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+Buy transaction with activity id 12345 should be reversed
+Sell transaction with activity id 23456 should be reversed
+
+
+Help me reverse a buy transaction with activity id 12345
+Help me reverse a sell transaction with activity id 3456
+
+revert the buy transaction for activity id 12345
+revert the sell transaction for activity id 56789
+
+
+Please undo the buy transaction for activity id 12345
+Please undo the sell transaction for activity id 56789
+
+
+Reverse the buy transaction please, activity id is 12345
+Reverse the sell transaction please, activity id is 3456
+
+
+can you reverse the buy transaction for activity id 12345? 
+can you reverse the sell transaction for activity id 3456?
+
+
+Lets reverse a buy transaction with activity id 12345
+Lets reverse a sell transaction with activity id 78652
+
+
+undo buy transaction with activity id 12345
+undo sell transaction with activity id 56734
+
+i'm looking to reverese buy transaction with activity id 12345
+i'm looking to reverese sell transaction with activity id 67854
+
+
+I want to reverese buy transaction with activity id 12345
+I want to reverese sell transaction with activity id 12345
+
+
+reverse_transaction
+- Transaction_type
+- Activity_ID
+
+
+
+Action - Required parameters
